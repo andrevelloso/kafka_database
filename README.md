@@ -11,8 +11,10 @@ Para testar kafka para um stream de dados, precisará
 
 Requisitos
 1. Java Virtual Machine instalado - Ex.OpenJDK 11
-2. Pentaho Data Integration versão 9.4 (será referido sempre como PDI)
-3. Base de dados. Utilizamos Oracle 19c (lembre de colocar o driver JDBC na pasta ..\data-integration\lib)
+2. Maven - Utilizamos Apache Maven 3.8.8
+3. Pentaho Data Integration versão 9.4 (referido sempre como PDI)
+4. Base de dados. Utilizamos Oracle 19c (lembre de colocar o driver JDBC na pasta ..\data-integration\lib)
+5. Editor de codigo: recomendo Visual Studio Code
 
 Na base de dados, deve criar a tabela para receber os dados, neste exemplo, poderá usar:
 
@@ -23,6 +25,6 @@ CREATE TABLE kafka_test_1(
   ts TIMESTAMP NOT NULL
  );
 
-No PDI, no ficheiro de transformação "tra_kafka_consumer_child", criar uma conexão a base de dados.
+No PDI, criar no ficheiro de transformação "tra_kafka_consumer_child" uma conexão a base de dados (pode utilizar o wizard).
 
    
