@@ -27,4 +27,8 @@ CREATE TABLE kafka_test_1(
 
 No PDI, criar no ficheiro de transformação "tra_kafka_consumer_child" uma conexão a base de dados (pode utilizar o wizard).
 
-   
+Ajuste o IP e Porta do Kafka Broker no código ../kafka-producer/src/main/java/com/exemplo/kafka/MockKafkaServer.java
+
+Ajuste o IP e porta do Kafka Broker na transformação "tra_kafka_consumer" > step Kafka Consumer > Setup > Connection > Direct > IP:Port
+
+
